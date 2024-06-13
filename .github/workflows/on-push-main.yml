@@ -24,10 +24,10 @@ jobs:
         with: 
           instance: sample
       - uses: alonch/actions-aws-function-node@main
-        id: backend
         with: 
           name: actions-aws-function-node-sample
           artifacts: src
           entrypoint-file: index.js
           entrypoint-function: handler
           allow-public-access: true
+
