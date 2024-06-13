@@ -22,11 +22,11 @@ jobs:
           role-session-name: ${{ github.actor }}
       - uses: alonch/actions-aws-backend-setup@main
         with: 
-          instance: demo
+          instance: sample
       - uses: alonch/actions-aws-function-node@main
         id: backend
         with: 
-          name: actions-aws-function-node-demo
+          name: actions-aws-function-node-sample
           artifacts: src
           entrypoint-file: index.js
           entrypoint-function: handler
